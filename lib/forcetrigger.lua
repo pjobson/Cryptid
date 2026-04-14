@@ -300,7 +300,7 @@ function Cryptid.forcetrigger(card, context)
 		end
 		if card.ability.name == "Runner" then
 			SMODS.scale_card(card, {
-				ref_table = card.ability,
+				ref_table = card.ability.extra,
 				ref_value = "chips",
 				scalar_value = "chip_mod",
 				no_message = true,
@@ -309,7 +309,7 @@ function Cryptid.forcetrigger(card, context)
 		end
 		if card.ability.name == "Ice Cream" then
 			SMODS.scale_card(card, {
-				ref_table = card.ability,
+				ref_table = card.ability.extra,
 				ref_value = "chips",
 				scalar_value = "chip_mod",
 				operation = "-",
@@ -776,7 +776,7 @@ function Cryptid.forcetrigger(card, context)
 		-- if card.ability.name == "Seltzer" then results = { jokers = { } } end
 		if card.ability.name == "Castle" then
 			SMODS.scale_card(card, {
-				ref_table = card.ability,
+				ref_table = card.ability.extra,
 				ref_value = "chips",
 				scalar_value = "chip_mod",
 				no_message = true,
